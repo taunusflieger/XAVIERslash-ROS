@@ -1,6 +1,7 @@
 - setup-file: {local-name: /opt/ros/melodic/setup.sh}
 - git: {local-name: src/racecar,         version: master,        uri: 'https://github.com/taunusflieger/XAVIERslash-ROS.git'}
 - git: {local-name: src/vesc,            version: master,        uri: 'https://github.com/taunusflieger/vesc.git'}
+- git: {local-name: src/razor_imu,       version: master,        uri: 'https://github.com/KristofRobot/razor_imu_9dof.git'}
 - git: {local-name: src/zed_wrapper,     version: master,        uri: 'https://github.com/stereolabs/zed-ros-wrapper.git'}
 - git: {local-name: src/serial,          version: master,        uri: 'https://github.com/wjwwood/serial.git'}
 - git: {local-name: src/ddynamic_reconfigure, version: 0.2.0,    uri: 'https://github.com/pal-robotics/ddynamic_reconfigure.git'}
