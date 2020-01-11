@@ -9,5 +9,5 @@
 - git: {local-name: src/particle_filter,      version: master,        uri: 'https://github.com/mit-racecar/particle_filter.git'}
 - git: {local-name: src/vision_opencv,        version: melodic,        uri: 'https://github.com/taunusflieger/vision_opencv.git'}
 - git: {local-name: src/image_transport_plugins,        version: indigo-devel,        uri: 'https://github.com/ros-perception/image_transport_plugins.git'}
-- git: {local-name: src/rtabmap_ros,        version: masterelodic,        uri: 'https://github.com/introlab/rtabmap_ros.git'}
+- git: {local-name: src/rtabmap_ros,        version: master,        uri: 'https://github.com/introlab/rtabmap_ros.git'}
 
