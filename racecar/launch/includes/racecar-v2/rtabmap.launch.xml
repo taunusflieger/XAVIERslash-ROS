@@ -2,9 +2,10 @@
 <!--
 
 -->
-<arg name="zed_namespace"		    	default="zed" />
 
 <launch>
+    <arg name="zed_namespace"		    	default="zed" />
+
     <!-- RTAB-map Node-->
     <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
       <arg name="rtabmap_args"                  value="--delete_db_on_start" />
