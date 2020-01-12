@@ -2,6 +2,8 @@
 <!--
 
 -->
+<arg name="zed_namespace"		    	default="zed" />
+
 <launch>
     <!-- RTAB-map Node-->
     <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
