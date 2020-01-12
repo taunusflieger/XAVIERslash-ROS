@@ -29,5 +29,6 @@
   <!-- start ZED camera -->
   <include file="$(find racecar)/launch/includes/$(arg racecar_version)/zed_camera.launch.xml" />
 
-
+  <!-- start rtabmap node -->
+  <include file="$(find racecar)/launch/includes/$(arg racecar_version)/rtabmap.launch.xml" />
 </launch>
