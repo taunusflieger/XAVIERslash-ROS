@@ -6,7 +6,7 @@
 <launch>
     <arg name="zed_namespace"		    	default="zed" />
     <arg name="zed_node_name"                   default="zed_node" />
-    
+
     <!-- RTAB-map Node-->
     <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
       <arg name="rtabmap_args"                  value="--delete_db_on_start" />
@@ -18,6 +18,6 @@
       <arg name="approx_sync"                   value="false" />
       <arg name="visual_odometry"               value="false" />
       <arg name="odom_topic"                    value="/$(arg zed_namespace)/$(arg zed_node_name)/odom" />
-      <arg name="rviz"                          value="true" />
+      <arg name="rviz"                          value="false" />
     </include>
 </launch>
