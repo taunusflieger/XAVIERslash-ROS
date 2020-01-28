@@ -1,19 +1,22 @@
 <!-- -*- mode: XML -*- -->
 <launch>
-
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+<!--
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_zed_camera_center" 
+        args="0.310 0.0 0.240 0.0 0.0 0.0 1.0 /base_link /zed_camera_center" />
+-->
+ <node pkg="tf" type="static_transform_publisher" name="camera_base_link"
+        args="0.310 0.0 0.195 0 0 0 base_link zed_camera_center 100" /> 
+
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu" 
         args="0.245 0.0 0.117    0.7071067811865475 0.7071067811865475 0.0 0.0 /base_link /base_imu_link" />
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" 
-        args="0.285 0.0 0.127 0.0 0.0 0.0 1.0 /base_link /laser" />
+        args="0.285 0.0 0.240 0.0 0.0 0.0 1.0 /base_link /laser" />
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_base_footprint" 
         args="0.0 0.0 0.0     0.0 0.0 0.0 1.0 /base_link /base_footprint" />
-
-  <!-- todo: zed camera -->
-  <!-- todo: structure sensor -->
-
 </launch>
+
